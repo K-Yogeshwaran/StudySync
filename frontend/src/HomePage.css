@@ -1,0 +1,134 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #2D4373;
+}
+
+.logo-icon {
+    font-size: 1.5rem;
+}
+
+.logo-text {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.login-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.signup-button {
+    background-color: #2D4373;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Hero Section Styling */
+.hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 100px;
+    /* Slight offset upward for visual balance */
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #0F172A;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.highlight {
+    color: #2D4373;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: #64748B;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    max-width: 800px;
+}
+
+/* Button Group Styling */
+.cta-group {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.primary-button {
+    background-color: #2D4373;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 14px 0 rgba(45, 67, 115, 0.39);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.plus-icon {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.secondary-button {
+    background-color: white;
+    color: #0F172A;
+    border: 1px solid #CBD5E1;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.secondary-button:hover {
+    background-color: #f8fafc;
+}

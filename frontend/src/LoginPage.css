@@ -1,0 +1,197 @@
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.login-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 2rem;
+    color: #2D4373;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0F172A;
+    margin-bottom: 0.5rem;
+}
+
+.login-subtitle {
+    color: #64748B;
+    margin-bottom: 2.5rem;
+}
+
+/* Form Styling */
+.login-form {
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 500;
+    color: #334155;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    /* Ensures padding doesn't affect width */
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #2D4373;
+}
+
+/* Options & Checkbox */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 0.85rem;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #475569;
+    cursor: pointer;
+}
+
+.forgot-password {
+    color: #2D4373;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Submit Button */
+.login-submit-btn {
+    width: 100%;
+    background-color: #2D4373;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(45, 67, 115, 0.2);
+    transition: opacity 0.2s;
+}
+
+.login-submit-btn:hover {
+    opacity: 0.95;
+}
+
+.signup-prompt {
+    margin-top: 2rem;
+    color: #64748B;
+    font-size: 0.9rem;
+}
+
+.signup-prompt a {
+    color: #2D4373;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+
+.error-alert {
+    background-color: #FEF2F2;
+    /* Light red background */
+    border: 1px solid #FCA5A5;
+    /* Soft red border */
+    color: #B91C1C;
+    /* Deep red text */
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-align: left;
+    animation: shake 0.2s ease-in-out;
+}
+
+.error-icon {
+    font-size: 1rem;
+}
+
+/* Optional: Add a subtle shake effect to draw attention to the error */
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-4px);
+    }
+
+    75% {
+        transform: translateX(4px);
+    }
+}
+
+.success-alert {
+    background-color: #F0FDF4;
+    /* Light green background */
+    border: 1px solid #BBF7D0;
+    /* Soft green border */
+    color: #15803D;
+    /* Deep green text */
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-align: left;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.success-icon {
+    font-size: 1rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

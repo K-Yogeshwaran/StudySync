@@ -1,0 +1,19 @@
+/* Inside your StudyMaterials CSS */
+.upload-controls {
+    display: flex;
+    flex-direction: column; /* Changed from row to column */
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.custom-file-upload {
+    width: 100%;
+    border: 1px dashed #cbd5e1;
+    padding: 8px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.upload-btn {
+    width: 100%;
+}
