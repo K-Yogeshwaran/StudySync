@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useState , useEffect } from "react";
-import WhiteBoard from "./WhiteBoard";
+import SyncedBoard from "./studyroom/SyncedBoard";
 import "./ClassRoom.css";
 import Participants from "./studyroom/Participants";
 import StudyMaterials from "./studyroom/StudyMaterials";
@@ -89,7 +89,7 @@ function ClassRoom() {
 
             <div className="workspace">
                 <main className="canvas-area">
-                    <WhiteBoard roomCode={roomCode} />
+                    <SyncedBoard roomCode={roomCode} />
 
                     {/* Floating Zoom/Page Controls could go here */}
                     <div className="canvas-footer">

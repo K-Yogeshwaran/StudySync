@@ -10,13 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@liveblocks/client": "^3.15.4",
+    "@liveblocks/react": "^3.15.4",
+    "@liveblocks/yjs": "^3.15.4",
     "fabric": "^7.2.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.11.0",
     "sockjs-client": "^1.6.1",
     "stompjs": "^2.3.3",
-    "tldraw": "^4.4.1"
+    "tldraw": "^4.5.3",
+    "yjs": "^13.6.30"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

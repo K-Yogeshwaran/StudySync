@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './StudyRoomHome.css';
-import WhiteBoard from './WhiteBoard';
+import SyncedBoard from './studyroom/SyncedBoard';
 
 import { useWebSocket } from "./config/WebSocketConfig";
 import Participants from './studyroom/Participants';
@@ -252,7 +252,7 @@ const StudyRoomHome = () => {
                 ) : (
                     /* PASSING PROPS TO YOUR NEW COMPONENT */
                     <div className="full-board-view">
-                        <WhiteBoard roomCode={roomCode} stompClient={stompClient} />
+                        <SyncedBoard roomCode={roomCode} />
                     </div>
                 )}
             </main>
